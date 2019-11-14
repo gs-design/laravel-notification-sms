@@ -1,0 +1,44 @@
+{
+    "name": "gs-design/laravel-notification-sms",
+    "description": "SMS Notifications Drivers for Laravel",
+    "keywords": [
+        "sms notification",
+        "laravel",
+        "sms",
+        "notification",
+        "sms notifications channel"
+    ],
+    "homepage": "https://github.com/gs-design/laravel-notification-sms",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Oleksandr H.",
+            "email": "gs.design.git@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "illuminate/notifications": "^5.5 || ^6.0",
+        "illuminate/support": "^5.5 || ^6.0"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.0",
+        "phpunit/phpunit": "^7.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "GsDesign\\SMS\\": "src"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "GsDesign\\SMS\\SMSServiceProvider"
+            ]
+        }
+    }
+}
